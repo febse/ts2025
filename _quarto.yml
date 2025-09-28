@@ -40,4 +40,7 @@ format:
     theme: cosmo
     html-math-method: katex
 
+execute: 
+  enabled: true
+
 editor: visual
