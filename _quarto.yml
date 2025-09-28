@@ -17,6 +17,3 @@ format:
   html:
     theme: cosmo
     html-math-method: katex
-
-execute: 
-  enabled: true
