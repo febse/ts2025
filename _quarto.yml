@@ -8,6 +8,7 @@ book:
   date: last-modified
   chapters:
     - index.qmd
+    - 01-Introduction.ipynb
     # - Homework.qmd
     # - 00-Recommended-Literature.qmd
     # - 01-Introduction-to-R.qmd
