@@ -9,6 +9,7 @@ book:
   chapters:
     - index.ipynb
     - 01-Introduction.ipynb
+    - 02-Linear-Difference-Equations.ipynb
     - references.qmd
 
 bibliography: references.bib
