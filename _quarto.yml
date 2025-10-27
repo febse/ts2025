@@ -10,6 +10,7 @@ book:
     - index.ipynb
     - 01-Introduction.ipynb
     - 02-Linear-Difference-Equations.ipynb
+    - 03-Statistics-Review.ipynb
     - references.qmd
 
 bibliography: references.bib
