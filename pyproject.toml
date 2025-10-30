@@ -7,5 +7,6 @@ requires-python = ">=3.13"
 dependencies = [
     "jupyter>=1.1.1",
     "pandas>=2.3.3",
+    "seaborn>=0.13.2",
     "statsforecast>=2.0.3",
 ]
