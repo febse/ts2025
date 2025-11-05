@@ -11,6 +11,8 @@ book:
     - 01-Introduction.ipynb
     - 02-Linear-Difference-Equations.ipynb
     - 03-Statistics-Review.ipynb
+    - 04-ARMA-Class.ipynb
+    - 04-ARMA.ipynb
     - references.qmd
 
 bibliography: references.bib
