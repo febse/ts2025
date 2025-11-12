@@ -13,6 +13,7 @@ book:
     - 03-Statistics-Review.ipynb
     - 04-ARMA-Class.ipynb
     - 04-ARMA.ipynb
+    - 04-A-Complex-Multiplication.ipynb
     - references.qmd
 
 bibliography: references.bib
