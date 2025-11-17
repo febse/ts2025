@@ -2090,6 +2090,7 @@ dependencies = [
     { name = "plotly" },
     { name = "seaborn" },
     { name = "statsforecast" },
+    { name = "statsmodels" },
 ]
 
 [package.metadata]
@@ -2099,6 +2100,7 @@ requires-dist = [
     { name = "plotly", specifier = ">=6.4.0" },
     { name = "seaborn", specifier = ">=0.13.2" },
     { name = "statsforecast", specifier = ">=2.0.3" },
+    { name = "statsmodels", specifier = ">=0.14.5" },
 ]
 
 [[package]]
