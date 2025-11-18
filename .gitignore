@@ -61,3 +61,5 @@ lit/
 
 **/*.quarto_ipynb
 00-SMA
+
+/assignments/
