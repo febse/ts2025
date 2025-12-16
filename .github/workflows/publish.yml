@@ -11,6 +11,11 @@ jobs:
     permissions:
       contents: write
     steps:
+      - name: Update ubuntu packages
+        run: sudo apt-get update
+
+      - name: Install ubuntu dependencies
+        run:  sudo apt-get install libpango1.0-dev              
       # - name: Update ubuntu packages
       #   run: sudo apt-get update
 

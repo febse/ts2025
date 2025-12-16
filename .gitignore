@@ -63,3 +63,5 @@ lit/
 00-SMA
 
 /assignments/
+/media/
+__pycache__*

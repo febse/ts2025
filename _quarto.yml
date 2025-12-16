@@ -15,6 +15,9 @@ book:
     - 04-ARMA.ipynb
     - 05-ARMA-Fitting.ipynb
     - 06-ARIMA-Forecasting.ipynb
+    - 07-Unit-Root-Tests.ipynb
+    - 08-GARCH.ipynb
+    - 09-Seasonality.ipynb
     # - 04-A-Complex-Multiplication.ipynb
     - references.qmd
 
