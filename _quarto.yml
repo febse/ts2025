@@ -27,3 +27,7 @@ format:
   html:
     theme: cosmo
     html-math-method: katex
+
+# Hide code cells by default in rendered outputs
+execute:
+  echo: false
