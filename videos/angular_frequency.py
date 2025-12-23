@@ -8,14 +8,14 @@ from manim import (
 import numpy as np
 
 
-class AngularFrequencyDemo(Scene):
+class SineWavesDifferentFrequencies(Scene):
     def construct(self):
         # Title (doubled runtime)
-        title = Text("Angular Frequency and the Sine Wave", font_size=36)
-        title.to_edge(UP, buff=0.3)
-        self.play(Write(title), run_time=2)
+        # title = Text("Angular Frequency and the Sine Wave", font_size=36)
+        # title.to_edge(UP, buff=0.3)
+        # self.play(Write(title), run_time=2)
         
-        self.play(FadeOut(title))
+        # self.play(FadeOut(title))
         
         # Storage for completed frequency displays
         completed_displays = []
@@ -27,7 +27,7 @@ class AngularFrequencyDemo(Scene):
         
         # All frequencies are now displayed as static sine waves
         # Wait a bit to show the final stacked result
-        self.wait(2)
+        # self.wait(2)
         
         # Now move all displays back to center and reanimate
         # Position them vertically aligned, centered
@@ -37,12 +37,14 @@ class AngularFrequencyDemo(Scene):
         # They should be centered vertically as a group
         # The small displays were spaced at 1.2 units apart
         # After scaling up, we need slightly less spacing to fit on screen
+
         spacing = 1.2 * scale_up_factor * 0.75  # Scale with adjustment factor to fit screen
         total_height = (len(completed_displays) - 1) * spacing
         start_y = total_height / 2
         
         # Move all displays to center positions, vertically aligned
         animations = []
+
         for i, components in enumerate(completed_displays):
             y_position = start_y - i * spacing
             target_position = UP * y_position
@@ -139,12 +141,12 @@ class AngularFrequencyDemo(Scene):
         self.play(*tracker_animations, run_time=4, rate_func=rate_functions.linear)
         self.wait(1)
     
-    def show_angular_frequency_full(self, omega, index, completed_displays):
+    def show_angular_frequency_full(self, f, index, completed_displays):
         """Show animation for a given frequency (in Hz), then shrink and stack"""
         
         # omega is frequency in Hz, convert to angular frequency (rad/s)
-        # ω_angular = 2π * f
-        angular_freq = 2 * PI * omega
+        # f_angular = 2π * f
+        angular_freq = 2 * PI * f
         
         # Create two side-by-side plots
         # Left: Unit circle in complex plane
@@ -197,10 +199,10 @@ class AngularFrequencyDemo(Scene):
             x_tick_labels.add(label)
         
         # Frequency label
-        if omega == 0.5:
+        if f == 0.5:
             omega_label = MathTex(f"f = \\frac{{1}}{{2}}\\text{{ Hz}}", font_size=32, color=YELLOW)
         else:
-            omega_label = MathTex(f"f = {int(omega) if omega == int(omega) else omega}\\text{{ Hz}}", font_size=32, color=YELLOW)
+            omega_label = MathTex(f"f = {int(f) if f == int(f) else f}\\text{{ Hz}}", font_size=32, color=YELLOW)
         omega_label.next_to(sine_axes, UP, buff=0.3)
         
         # Draw axes (doubled runtime)
