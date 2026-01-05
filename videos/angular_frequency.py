@@ -187,7 +187,7 @@ class SineWavesDifferentFrequencies(Scene):
         # Add labels for sine axes
         sine_x_label = MathTex("t \\text{ (s)}", font_size=24)
         sine_x_label.next_to(sine_axes.get_x_axis().get_end(), RIGHT, buff=0.1)
-        sine_y_label = MathTex("\\sin(\\omega t)", font_size=24)
+        sine_y_label = MathTex("\\sin(2\\pi f t)", font_size=24)
         sine_y_label.next_to(sine_axes.get_y_axis().get_end(), UP, buff=0.1)
         
         # Add custom x-axis labels for sine plot (in seconds, 0 to 2)
